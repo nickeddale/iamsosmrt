@@ -1,0 +1,183 @@
+/* Container Of The Plugin */
+
+.socialPlugin {
+	left: 0px;
+	text-align: center;
+	margin: 20px auto 0;
+	height: 30px;
+	display: block;
+	z-index: 100;
+
+	position: relative;
+	width: 100%;
+
+}
+
+.socials {
+	@include tablet
+	{
+		padding-top: 20px;
+	}
+	@include phone
+	{
+		padding-top: 20px;
+	}
+
+}
+
+.socialPlugin .showSocialButtons {
+	font-size:15px;
+	cursor:pointer;
+	padding:0.333em 0.667em;
+	border-radius: 4px;
+	border: 1px solid rgba(0,0,0,0.3);
+	color: rgba(0,0,0,0.7);
+}
+
+.socialPlugin .socials {
+	width: 40px;
+	color: white;
+	line-height: 10px;
+	text-align: center;
+	margin-left: 0px;
+	display:block;
+	transform-origin:50% 0%;
+
+
+	-webkit-transform: scale(0) translateY(-150px);
+	-moz-transform:scale(0) translateY(-150px);
+	-o-transform:scale(0) translateY(-150px);
+	transform:scale(0) translateY(-150px);
+
+	-webkit-transition:.5s;
+	-moz-transition:.5s;
+	-o-transition:.5s;
+	transition:.5s;
+	
+
+	opacity:0;
+
+	width: 100%;
+	text-align: right;
+	padding-right: 40px;
+}
+
+/* Toggled State */
+
+.socialPlugin .socials.opened {
+	opacity:1;
+	-webkit-transform: scale(1) translateY(-60px);
+	-moz-transform:scale(1) translateY(-60px);
+	-o-transform:scale(1) translateY(-60px);
+	transform:scale(1) translateY(-60px);
+	-webkit-transition:.5s;
+	-moz-transition:.5s;
+	-o-transition:.5s;
+	transition:.5s;
+}
+
+
+/* Share buttons */
+
+.socialPlugin .socials .fa {
+	height: 40px;
+	width: 40px;
+	font-size: 1em;
+	overflow: hidden;
+	position: relative;
+	text-decoration: none;
+	-webkit-backface-visibility: hidden;
+}
+
+.socialPlugin .socials .fa:before, .socialPlugin .socials .fa:after {
+	left: 0;
+	position: absolute;
+	text-align: center;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	top: 50%;
+	width: 100%;
+}
+
+.socialPlugin .socials .fa:before {
+	color: white;
+	-webkit-transform: translate3D(0, -50%, 0);
+	-ms-transform: translate3D(0, -50%, 0);
+	transform: translate3D(0, -50%, 0);
+	z-index: 2;
+}
+
+.socialPlugin .socials .fa:after {
+	padding-bottom: 25%;
+	padding-top: 300%;
+	top: 0;
+}
+
+.socialPlugin .socials .fa:hover:after {
+	-webkit-transform: translate3D(0, -73%, 0);
+	-ms-transform: translate3D(0, -73%, 0);
+	transform: translate3D(0, -73%, 0);
+}
+
+.socialPlugin .socials .fa:hover:before {
+	-webkit-transform: translate3D(0, -250%, 0);
+	-ms-transform: translate3D(0, -250%, 0);
+	transform: translate3D(0, -250%, 0);
+}
+
+/* The social icons */
+
+.socialPlugin .socials .fa-twitter:after {
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.25, transparent), color-stop(0.75, #ffffff));
+	background-image: -webkit-linear-gradient(transparent 25%, #ffffff 75%);
+	background-image: -moz-linear-gradient(transparent 25%, #ffffff 75%);
+	background-image: -o-linear-gradient(transparent 25%, #ffffff 75%);
+	background-image: linear-gradient(transparent 25%, #ffffff 75%);	
+	content: "\f099";
+	color: #00acee;
+}
+
+.socialPlugin .socials .fa-facebook:after {
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.25, transparent), color-stop(0.75, #ffffff));
+	background-image: -webkit-linear-gradient(transparent 25%, #ffffff 75%);
+	background-image: -moz-linear-gradient(transparent 25%, #ffffff 75%);
+	background-image: -o-linear-gradient(transparent 25%, #ffffff 75%);
+	background-image: linear-gradient(transparent 25%, #ffffff 75%);	
+	content: "\f09a";
+	color: #3b5998;
+
+
+}
+
+.socialPlugin .socials .fa-google-plus:after {
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.25, transparent), color-stop(0.75, #ffffff));
+	background-image: -webkit-linear-gradient(transparent 25%, #ffffff 75%);
+	background-image: -moz-linear-gradient(transparent 25%, #ffffff 75%);
+	background-image: -o-linear-gradient(transparent 25%, #ffffff 75%);
+	background-image: linear-gradient(transparent 25%, #ffffff 75%);	
+	content: "\f0d5";
+	color: #bb0000;
+}
+
+.socialPlugin .socials .fa-pinterest:after {
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.25, transparent), color-stop(0.75, #ffffff));
+	background-image: -webkit-linear-gradient(transparent 25%, #ffffff 75%);
+	background-image: -moz-linear-gradient(transparent 25%, #ffffff 75%);
+	background-image: -o-linear-gradient(transparent 25%, #ffffff 75%);
+	background-image: linear-gradient(transparent 25%, #ffffff 75%);	
+	content: "\f0d2";
+	color: #cb2027;
+
+}
+
+.socialPlugin .socials .fa-tumblr:after {
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.25, transparent), color-stop(0.75, #ffffff));
+	background-image: -webkit-linear-gradient(transparent 25%, #ffffff 75%);
+	background-image: -moz-linear-gradient(transparent 25%, #ffffff 75%);
+	background-image: -o-linear-gradient(transparent 25%, #ffffff 75%);
+	background-image: linear-gradient(transparent 25%, #ffffff 75%);	
+	content: "\f173";
+	color: #2C4762;
+
+
+}

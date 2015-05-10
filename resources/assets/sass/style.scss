@@ -1,0 +1,19 @@
+//////VARIABLES
+$baseColor: #5f7ebc;
+$accentColor: #4ca0da;
+$splashColor: #f0ce58;
+$splashColor2: #ad8ad2;
+$textColor: #505961;
+$textColorDark: #666666;
+
+$headlineColor: #fff;
+$linkColor: #333;
+$selectionColor: $accentColor;
+
+$documentBackgroundColor: #f3f3f3;
+
+
+/////IMPORTS
+@import "1-tools/tools-dir.scss";
+@import "2-base/base-dir.scss";
+@import "3-sections/sections-dir.scss";

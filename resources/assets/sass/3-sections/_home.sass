@@ -1,0 +1,109 @@
+.content, .container-fluid
+	position: relative
+	padding: 0px
+	z-index: 10
+
+.post 
+	width: 100%
+	height: 150vh
+	overflow: hidden
+
+	hr 
+		margin: 50px 0px
+
+.post-cover
+	width: 100%
+	min-height: 90vh
+	margin-bottom: 200px
+	+prefixer(background-size, cover, webkit moz ms o spec)
+	background-repeat: no-repeat
+	background-position: center
+	background-attachment: fixed
+
+.title-container
+	position: absolute
+	width: 100%
+	z-index: 20
+
+.title
+	position: relative
+	height: 400px
+	width: 80%
+	margin: 0 auto
+	margin-top: -350px
+	margin-bottom: 100px
+	text-align: center
+
+	@include tablet 
+		height: 250px
+
+	@include phone 
+		height: 200px
+		margin-top: -250px
+
+	h4 
+		margin-bottom: 10px
+
+.title-first
+	margin-top: -410px
+	color: #fff
+
+	@include phone
+		margin-top: -350px
+
+.scrim 
+	width: 100%
+	position: absolute
+	z-index: -5
+	background: linear-gradient(180deg, transparent, #333333)
+
+.scrim-first
+	height: 450px
+	margin-top: -650px
+
+.scrim-card
+	height: 155px
+	margin-top: -505px
+	opacity: 0.6
+
+	@include tablet 
+		margin-top: -355px
+
+	@include phone 
+		margin-top: -405px
+
+
+.title-card
+	background-color: #fff
+	padding: 5px 40px 0px 40px
+	color: #333
+
+.color-inherit
+	color: inherit
+
+
+time.post-date
+	text-transform: uppercase
+	font-size: 0.9em
+
+h1.post-title 
+	margin-bottom: 5px 
+	
+
+
+ul.category 
+	text-align: center
+	margin-top: -75px
+	padding-bottom: 50px
+
+	li 
+		font-family: breamcatcher, sans-serif
+		letter-spacing: 3px
+		font-size: 1.2em
+		background-color: #EC1B23
+		width: auto
+		position: relative
+		display: inline-block
+		color: #fff
+		text-transform: uppercase
+		padding: 6px 8px 3px 10px
