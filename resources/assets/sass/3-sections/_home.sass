@@ -18,7 +18,9 @@
 	+prefixer(background-size, cover, webkit moz ms o spec)
 	background-repeat: no-repeat
 	background-position: center
-	background-attachment: fixed
+
+	@include desktop
+		background-attachment: fixed
 
 .title-container
 	position: absolute

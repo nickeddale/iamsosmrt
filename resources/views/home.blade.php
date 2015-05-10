@@ -22,7 +22,7 @@
 									<h1 class="post-title">{{ str_limit($post->title, 40, '...') }}</h1>
 								</strong>
 							</a>
-							<h3 class="post-tagline">{{ $post->title }}</h3>
+							<h3 class="post-tagline">{{ $post->tagline }}</h3>
 							<time class="post-date">{{ $post->created_at->format('F j Y') }}</time>
 						</div>	
 					</div>
