@@ -20,7 +20,6 @@
 
 	<div class="container-fluid">
 
-		<div class="row">
 			
 			<div class="post-full col-md-10 col-md-offset-1">
 				<div class="socialShare"></div>
@@ -39,7 +38,6 @@
 					
 				</article>
 			</div>
-		</div>
 		
 		<hr>
 

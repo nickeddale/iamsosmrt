@@ -108,7 +108,7 @@ a:active {
 }
 
 .socialPlugin .socials {
-  width: 40px;
+  width: 48px;
   color: white;
   line-height: 10px;
   text-align: center;
@@ -564,6 +564,7 @@ ul.category li {
   margin-top: -250px;
   z-index: 10;
   background-color: #fff;
+  padding: 0px;
 }
 .post-full article {
   position: relative;
